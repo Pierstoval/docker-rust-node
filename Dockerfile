@@ -21,5 +21,6 @@ RUN apt-get update \
     && curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y \
     && . "$HOME/.cargo/env" \
     && rustup update stable \
-    && cargo install tauri-bundler --force
+    && cargo install tauri-bundler --force \
+    && cargo install tauri-cli --force
 
